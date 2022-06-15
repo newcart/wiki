@@ -1,6 +1,6 @@
 
 # Ürün işlemleri
-### postProduct bir ürün bilgisi çekme
+### POST "{pazaryeri}/product" postProduct bir ürün bilgisi çekme
 ```
 {
     "seller_id": "108498",
@@ -9,7 +9,7 @@
     "prodcut_code": "35168-955",
 }
 ```
-### postProducts ürün listesi çekme
+### POST "{pazaryeri}/products" postProducts ürün listesi çekme
 ```
 {
     "seller_id": "108498",
