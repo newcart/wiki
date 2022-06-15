@@ -19,7 +19,6 @@ getMainCategories: Kök Kategori listesini almak için
 getCategories: Kategori listesini almak için
 getCategory: Bir kategorinin bilgilerini almak için
 getCategorySpecs: Kategoride kullanılabilecek specsler için
-getCategorySpecValues: Kategoride tanımlı Specslerin değerleri için 
 ```
 
 POST "{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
