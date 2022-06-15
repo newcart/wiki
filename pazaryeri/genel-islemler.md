@@ -6,10 +6,11 @@ Pazaryeri modüllerinde
 * app.controller.ts dosyasında gateway den gelen istekler karşılanır ve bu istekler servise yönlendirilir
 * @param body post işlemi ile gönderilen json datasına karşılık gelmektedir. HTTP Body dir
 
-Her pazaryeri için üç servis olacak. Bu servisler isteklerin işlendiği yerdir. bu servis içinde ayrıca dto ve eventslar kullanılabilir.
+Her pazaryeri için temel üç servis olacak. Bu servisler isteklerin işlendiği yerdir. bu servis içinde ayrıca ek servisler, dto ve eventslar kullanılabilir.
 * a. productService ürün işlemleri
 * b. orderService sipariş işlemleri
 * c. appService diğer işlemler
+* d. utilService tüm serviler için ortak işlevler, metodlar
 
 Tüm pazaryerleri servisleri aynı isimde metodlara sahiptir. hepsine aynı yapıda json ile istek göndeirilir. ve aynı yapıda geri dönüş alınır
 ## appService Metodları
