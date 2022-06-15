@@ -15,10 +15,10 @@ Tüm pazaryerleri servisleri aynı isimde metodlara sahiptir. hepsine aynı yap�
 ## appService Metodları
 ```
 testAccount: Api hesabını test etmek için
-getMainCategories: Kök Kategori listesini almak için
-getCategories: Kategori listesini almak için
-getCategory: Bir kategorinin bilgilerini almak için
-getCategorySpecs: Kategoride kullanılabilecek specsler için
+postMainCategories: Kök Kategori listesini almak için
+postCategories: Kategori listesini almak için
+postCategory: Bir kategorinin bilgilerini almak için
+postCategorySpecs: Kategoride kullanılabilecek specsler için
 ```
 
 POST "{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
