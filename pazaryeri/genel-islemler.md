@@ -19,6 +19,8 @@ postMainCategories: Kök Kategori listesini almak için
 postCategories: Kategori listesini almak için
 postCategory: Bir kategorinin bilgilerini almak için
 postCategorySpecs: Kategoride kullanılabilecek specsler için
+postBrands: Markalar listesini almak için
+postBrand: Bir Markanın bilgilerini almak için
 ```
 
 POST "{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
