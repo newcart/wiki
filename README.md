@@ -1,14 +1,15 @@
 # Wiki
 
-### Yeni Bir Mikroservis Oluşturma
+## Yeni Bir Mikroservis Açma
+### Mikroservis Oluşturma
 1. Öncelikle tamamen boş bir reposity oluşturunuz
 2. Boş Repositiyi çalışma oratmınıza klonlayınız
 3. ```$ nest new {mikroservis}``` komutunu çalıştırınız
 4. ```$ cd {mikroservis}```{mikroservis} klasörüne gidiniz
 5. ```$ nest generate resource db``` ile dto ları oluşturunuz
+### Mikroservis Sınıfı İşlemleri
 
-
-### Pazaryerleri
+## Pazaryerleri
 Genel İşlemler: https://github.com/newcart/wiki/blob/main/pazaryeri/genel-islemler.md
 
 Kategori İşlemleri: https://github.com/newcart/wiki/blob/main/pazaryeri/kategori.md
