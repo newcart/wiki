@@ -8,7 +8,10 @@
 4. ```$ cd {mikroservis}```{mikroservis} klasörüne gidiniz
 5. ```$ nest generate resource db``` ile dto ları oluşturunuz
 ### Mikroservis Sınıfı İşlemleri
-
+* app.module.ts dosyasında mikroservis için gerekli temel yapılandırmalar yapılır. import edilecek hizmetler ayarlanır
+* app.controller.ts dosyasında gateway den gelen istekler karşılanır ve bu istekler servise yönlendirilir
+* @param body post işlemi ile gönderilen json datasına karşılık gelmektedir. HTTP Body dir
+* 
 ## Pazaryerleri
 Genel İşlemler: https://github.com/newcart/wiki/blob/main/pazaryeri/genel-islemler.md
 
