@@ -2,7 +2,7 @@
 
 ### Yeni Bir Mikroservis Oluşturma
 1. Öncelikle tamamen boş bir reposity oluşturunuz
-2. Boş Repositiyi çalışma oratmınıza klonşayınız
+2. Boş Repositiyi çalışma oratmınıza klonlayınız
 3. ```$ nest new {mikroservis}``` komutunu çalıştırınız
 4. ```$ cd {mikroservis}```{mikroservis} klasörüne gidiniz
 5. ```$ nest generate resource db``` ile dto ları oluşturunuz
