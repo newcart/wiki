@@ -58,20 +58,22 @@
                     "spec_value_name": ""
                 }
             ],
-            "variants": {
-                "variant_markeplace_id": "",
-                "variant_seller_sku": "",
-                "variant_barcode": "",
-                "variant_price": "",
-                "variant_specs": [
-                    {
-                        "spec_id": "",
-                        "spec_name": "",
-                        "spec_value_id": "",
-                        "spec_value_name": ""
-                    }
-                ]
-            },
+            "variants": [
+                {
+                    "variant_markeplace_id": "",
+                    "variant_seller_sku": "",
+                    "variant_barcode": "",
+                    "variant_price": "",
+                    "variant_specs": [
+                        {
+                            "spec_id": "",
+                            "spec_name": "",
+                            "spec_value_id": "",
+                            "spec_value_name": ""
+                        }
+                    ]
+                }
+            ],
             "_n11_catalog_id": "",
             "_n11_category": ""
         }
