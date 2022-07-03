@@ -5,7 +5,7 @@
 {
     "seller_id": "108498",
     "api_key": "OtttIGZPJFwCqonagh2v",
-    "secret_key": "8D5OhXAwAE1JxU1uJNIq",
+    "secret_key": "8D5OhXAwAE*********",
     "prodcut_code": "35168-955",
 }
 ```
