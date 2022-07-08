@@ -30,6 +30,22 @@ export class DbEntity {
     email: string;
 }
 ```
+* ./db/dto/create-user.dto.ts kullanıcı oluşturmak için gerekli alanların tanımlandığı dto sınıfı
+```
+import { IsNumber, IsString } from 'class-validator';
+
+export class CreateDbDto {
+    @IsString()
+    readonly name: string;
+    @IsNumber()
+    readonly age: number;
+    @IsNumber()
+    readonly store: number;
+    @IsString()
+    readonly email: string;
+}
+
+```
 ## Pazaryerleri
 Genel İşlemler: https://github.com/newcart/wiki/blob/main/pazaryeri/genel-islemler.md
 
