@@ -48,7 +48,7 @@ export class CreateDbDto {
 * ./db/dto/update-user.dto.ts kullanıcı oluşturmak için gerekli kontrollerin tanımlandığı dto sınıfı
 ```
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateUserDto } from './create-user.dto';
+import { CreateUserDto } from './db/dto/create-user.dto.ts';
 
 export class UpdateDbDto extends PartialType(CreateUserDto) {}
 ```
