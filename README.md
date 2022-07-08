@@ -30,7 +30,7 @@ export class DbEntity {
     email: string;
 }
 ```
-* ./db/dto/create-user.dto.ts kullanıcı oluşturmak için gerekli alanların tanımlandığı dto sınıfı
+* ./db/dto/create-user.dto.ts kullanıcı oluşturmak için gerekli kontrollerin tanımlandığı dto sınıfı
 ```
 import { IsNumber, IsString } from 'class-validator';
 
@@ -44,7 +44,13 @@ export class CreateDbDto {
     @IsString()
     readonly email: string;
 }
+```
+* ./db/dto/update-user.dto.ts kullanıcı oluşturmak için gerekli kontrollerin tanımlandığı dto sınıfı
+```
+import { PartialType } from '@nestjs/mapped-types';
+import { CreateUserDto } from './create-user.dto';
 
+export class UpdateUserDto extends PartialType(CreateUserDto) {}
 ```
 ## Pazaryerleri
 Genel İşlemler: https://github.com/newcart/wiki/blob/main/pazaryeri/genel-islemler.md
