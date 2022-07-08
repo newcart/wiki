@@ -17,7 +17,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, OneToMany, JoinColumn, OneToOne } from 'typeorm';
 
 @Entity({ name: 'user', schema: 'public' })
-export class UserEntity {
+export class DbEntity {
     @PrimaryGeneratedColumn()
     id: number;
     @Column()
