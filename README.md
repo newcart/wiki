@@ -13,6 +13,7 @@
 * @param body post işlemi ile gönderilen json datasına karşılık gelmektedir. HTTP Body dir
 ### Mikroservis Db Resource Bileşenleri
 * ./db/db.module.ts içerisinde Db modülünü App modülünde kullanmak için export ```exports[DbService]``` ekleyiniz 
+* ./db/db.controller.ts doğrudan erişime izin vermeyeceğimiz için routingleri siliniz
 * ./db/entity/db.entity.ts içerisinde servise ait veri tablosu yapılandırılır
 ```
 import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, OneToMany, JoinColumn, OneToOne } from 'typeorm';
@@ -52,6 +53,41 @@ import { PartialType } from '@nestjs/mapped-types';
 import { CreateUserDto } from './db/dto/create-user.dto.ts';
 
 export class UpdateDbDto extends PartialType(CreateUserDto) {}
+```
+/ app.module.ts yi bağlantı için yapılandırınız
+```
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config'
+import { TypeOrmModule } from '@nestjs/typeorm'
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { DataSource } from 'typeorm';
+import { DbModule } from './db/db.module';
+import { DbService } from './db/db.service';
+import { Db } from './db/entities/db.entity';
+
+@Module({
+  imports: [
+      DbModule,
+      ConfigModule.forRoot({isGlobal:true}),
+      TypeOrmModule.forRoot({
+          type      : 'postgres',
+          host      : process.env.POSTGRES_HOST,
+          port      : parseInt(<string>process.env.POSTGRES_PORT),
+          username  : process.env.POSTGRES_USER,
+          password  : process.env.POSTGRES_PASSWORD,
+          database  : process.env.POSTGRES_DATABASE,
+          entities  : [Db],
+          autoLoadEntities: true,
+      }),
+  ],
+  controllers: [AppController],
+  providers: [AppService, DbService],
+})
+export class AppModule {
+    constructor(private dataSource: DataSource) {}
+}
+
 ```
 ## Pazaryerleri
 Genel İşlemler: https://github.com/newcart/wiki/blob/main/pazaryeri/genel-islemler.md
