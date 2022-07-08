@@ -12,7 +12,8 @@
 * app.controller.ts dosyasında gateway den gelen istekler karşılanır ve bu istekler servise yönlendirilir
 * @param body post işlemi ile gönderilen json datasına karşılık gelmektedir. HTTP Body dir
 ### Mikroservis Db Resource Bileşenleri
-*  ./db/entity/db.entity.ts içerisinde servise ait veri tablosu yapılandırılır
+* ./db/db.module.ts içerisinde Db modülünü App modülünde kullanmak için export ```exports[DbService]``` ekleyiniz 
+* ./db/entity/db.entity.ts içerisinde servise ait veri tablosu yapılandırılır
 ```
 import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, OneToMany, JoinColumn, OneToOne } from 'typeorm';
 
