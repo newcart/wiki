@@ -24,7 +24,7 @@ postBrands: Markalar listesini almak için
 postBrand: Bir Markanın bilgilerini almak için
 ```
 
-POST "{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
+POST "{api_user_id}/{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
 ```
 {
     "seller_id": "{seller_id}",
@@ -32,7 +32,7 @@ POST "{pazaryeri}/test" pazaryeri api hesabını test etme hizmeti.
     "secret_key": "{secret_key}"
 }
 ```
-POST "{pazaryeri}/brand"
+POST "{api_user_id}/{pazaryeri}/brand"
 ```
 {
     "seller_id": "{seller_id}",
@@ -41,7 +41,7 @@ POST "{pazaryeri}/brand"
     "brand_code": "{brand_cod}"
 }
 ```
-POST "{pazaryeri}/brands"
+POST "{api_user_id}/{pazaryeri}/brands"
 ```
 {
     "seller_id": "{seller_id}",
@@ -49,7 +49,7 @@ POST "{pazaryeri}/brands"
     "secret_key": "{secret_key}"
 }
 ```
-POST "{pazaryeri}/maincategories"
+POST "{api_user_id}/{pazaryeri}/maincategories"
 ```
 {
     "seller_id": "{seller_id}",
@@ -57,7 +57,7 @@ POST "{pazaryeri}/maincategories"
     "secret_key": "{secret_key}"
 }
 ```
-POST "{pazaryeri}/categories"
+POST "{api_user_id}/{pazaryeri}/categories"
 ```
 {
     "seller_id": "{seller_id}",
@@ -65,7 +65,7 @@ POST "{pazaryeri}/categories"
     "secret_key": "{secret_key}"
 }
 ```
-POST "{pazaryeri}/category"
+POST "{api_user_id}/{pazaryeri}/category"
 ```
 {
     "seller_id": "{seller_id}",
@@ -74,7 +74,7 @@ POST "{pazaryeri}/category"
     "brand_code": "{category_code}",
 }
 ```
-POST "{pazaryeri}/category_specs"
+POST "{api_user_id}/{pazaryeri}/category_specs"
 ```
 {
     "seller_id": "{seller_id}",
