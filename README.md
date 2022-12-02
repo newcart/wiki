@@ -2,7 +2,7 @@
 Address ve Deiğer Endpointler için endpointler
 ## COUNTRY
 ~~~
-GET - {{SERVER}}/address/country
+GET - {{SERVER}}/address/country //Servis hakkında genel bilgi dönmek için.
 GET - {{SERVER}}/address/country/{id}
 GET - {{SERVER}}/address/countries
 POST - {{SERVER}}/address/country/{id}
