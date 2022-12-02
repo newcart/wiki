@@ -4,7 +4,7 @@ Address ve Deiğer Endpointler için endpointler
 ~~~
 GET - {{SERVER}}/address/country
 GET - {{SERVER}}/address/country/{id}
-GET - GET - {{SERVER}}/address/countries
+GET - {{SERVER}}/address/countries
 POST - {{SERVER}}/address/country/{id}
 PUT - {{SERVER}}/address/country/{id}
 DELETE - {{SERVER}}/address/country/{id}
