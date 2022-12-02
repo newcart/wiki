@@ -8,9 +8,9 @@ GET - GET - {{SERVER}}/address/countries
 POST - {{SERVER}}/address/country/{id}
 PUT - {{SERVER}}/address/country/{id}
 DELETE - {{SERVER}}/address/country/{id}
-~~~
-### POST ÖRNEĞİ
-~~~
+
+POST ÖRNEĞİ
+
 Request
 {
     "id": 1,
@@ -19,10 +19,11 @@ Request
     "sort_order": "1",
     "status": 1
 }
+
 Kurallar:
-				'name'       => 'required|string|max:255',
-				'code'       => 'required|string|max:32|unique:countries',
-				'status'     => 'required|boolean'
+'name'       => 'required|string|max:255',
+'code'       => 'required|string|max:32|unique:countries',
+'status'     => 'required|boolean'
 
 Başarılı Response:
 {
@@ -39,6 +40,7 @@ Başarılı Response:
     },
     "errors": []
 }
+
 Başarısız Response:
 {
     "status": 1,
