@@ -9,6 +9,37 @@ POST - {{SERVER}}/address/country/{id}
 PUT - {{SERVER}}/address/country/{id}
 DELETE - {{SERVER}}/address/country/{id}
 
+GET ÖRNEĞİ
+
+Başarılı Response:
+{
+    "status": 1,
+    "cached": 0,
+    "message": "Ülke Bilgileri",
+    "count": 1,
+    "data": {
+        "id": 4,
+        "name": "Türkiye Cumhuriyeti",
+        "code": "TR",
+        "sort_order": 1,
+        "status": 1
+    },
+    "errors": []
+}
+
+Başarısız Response:
+{
+    "status": 1,
+    "cached": 0,
+    "message": "Ülke Bulunamadı",
+    "count": 1,
+    "data": {},
+    "errors": [
+        "gönderdiğiniz kod bulunmamaktadır"
+    ]
+}
+
+==============================================================
 POST ÖRNEĞİ
 
 Request
