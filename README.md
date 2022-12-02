@@ -30,7 +30,7 @@ Başarılı Response:
     "status": 1,
     "cached": 0,
     "message": "Ülke Bilgileri",
-    "count": 0,
+    "count": 1,
     "data": {
         "id": 4,
         "name": "Türkiye Cumhuriyeti",
@@ -46,7 +46,7 @@ Başarısız Response:
     "status": 1,
     "cached": 0,
     "message": "Ülke Oluşturulamadı",
-    "count": 0,
+    "count": 1,
     "data": {
         "id": 4,
         "name": "Türkiye Cumhuriyeti",
