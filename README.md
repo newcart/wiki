@@ -94,7 +94,7 @@ Başarısız Response:
 ~~~
 GET - {{SERVER}}/address/city
 GET - {{SERVER}}/address/city/{id}
-GET - GET - {{SERVER}}/address/cities/{country_id}
+GET - {{SERVER}}/address/cities/{country_id}
 POST - {{SERVER}}/address/city/{id}
 PUT - {{SERVER}}/address/city/{id}
 DELETE - {{SERVER}}/address/city/{id}
@@ -103,7 +103,7 @@ DELETE - {{SERVER}}/address/city/{id}
 ~~~
 GET - {{SERVER}}/address/district
 GET - {{SERVER}}/address/district/{id}
-GET - GET - {{SERVER}}/address/districts/{city_id}
+GET - {{SERVER}}/address/districts/{city_id}
 POST - {{SERVER}}/address/district/{id}
 PUT - {{SERVER}}/address/district/{id}
 DELETE - {{SERVER}}/address/district/{id}
