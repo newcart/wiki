@@ -90,7 +90,7 @@ Başarısız Response:
     ]
 }
 ~~~
-## CITY
+## DISTRICT
 ~~~
 GET - {{SERVER}}/address/city
 GET - {{SERVER}}/address/city/{id}
