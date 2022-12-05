@@ -90,7 +90,7 @@ Başarısız Response:
     ]
 }
 ~~~
-## DISTRICT
+## CITY
 ~~~
 GET - {{SERVER}}/address/city
 GET - {{SERVER}}/address/city/{id}
@@ -99,7 +99,7 @@ POST - {{SERVER}}/address/city/{id}
 PUT - {{SERVER}}/address/city/{id}
 DELETE - {{SERVER}}/address/city/{id}
 ~~~
-## CITY
+## DISTRICT
 ~~~
 GET - {{SERVER}}/address/district
 GET - {{SERVER}}/address/district/{id}
