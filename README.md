@@ -108,3 +108,49 @@ POST - {{SERVER}}/address/district/{id}
 PUT - {{SERVER}}/address/district/{id}
 DELETE - {{SERVER}}/address/district/{id}
 ~~~
+## Anasayfa İçin Get Örnekleri
+~~~
+GET - {{SERVER}}/home/section_carousel1,2,3
+
+section_carousel1,2,3:
+
+'{
+    "status": 1,
+    "cached": 0,
+    "message": "Carousel1 Bilgileri ",
+    "count": 1,
+    "title": "İndirime Girenler",
+    "url": "hakkimizda",
+    "product": [
+    {
+                "image": "assets/images/product-images/1.png",
+                "oldPrice":52,
+                "newPrice":48,
+                "discountRate":50,
+                "currency":"₺",
+                "inStock":1,
+                "brandName":"Baseus",
+                "brandImage":"assets/images/brands/1.png"
+                
+   }, 
+       {
+                "image": "assets/images/product-images/1.png",
+                "oldPrice":52,
+                "newPrice":48,
+                "discountRate":50,
+                "currency":"₺",
+                "inStock":1,
+                "brandName":"Baseus",
+                "brandImage":"assets/images/brands/1.png"
+                
+   }
+     ],
+    
+    "errors": []
+}'
+
+~~~
+
+
+
+
