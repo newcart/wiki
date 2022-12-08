@@ -151,9 +151,9 @@ section_carousel1,2,3:
 
 =========================================================
 
-GET - {{SERVER}}/home/section_grid1
+GET - {{SERVER}}/home/section_grid1,2,3
 
-section_grid1:
+section_grid1,2,3: (2 ve 3'de image boş olabilir. 1'de zorunlu)
 
 {
         "status": 1,
