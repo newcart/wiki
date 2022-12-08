@@ -149,7 +149,7 @@ section_carousel1,2,3:
     "errors": []
 }'
 
-~~~
+
 GET - {{SERVER}}/home/section_grid1
 
 section_grid1:
@@ -190,6 +190,7 @@ section_grid1:
     "errors": []
 }'
 
+
+
+
 ~~~
-
-
