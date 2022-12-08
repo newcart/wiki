@@ -150,7 +150,46 @@ section_carousel1,2,3:
 }'
 
 ~~~
+GET - {{SERVER}}/home/section_grid1
 
+section_grid1:
 
+{
+        "status": 1,
+    "cached": 0,
+    "message": "section_grid1 Bilgileri",
+    "count": 1,
+    "title": "Sonbahar Fırsatı",
+    "image": "assets/images/vertical-banner.png",
+    "url": "hakkimizda",
+    "product": [
+    {
+                "image": "assets/images/product-images/1.png",
+                "oldPrice":52,
+                "newPrice":48,
+                "discountRate":50,
+                "currency":"₺",
+                "inStock":1,
+                "brandName":"Baseus",
+                "brandImage":"assets/images/brands/1.png"
+                
+   }, 
+       {
+                "image": "assets/images/product-images/1.png",
+                "oldPrice":52,
+                "newPrice":48,
+                "discountRate":50,
+                "currency":"₺",
+                "inStock":1,
+                "brandName":"Baseus",
+                "brandImage":"assets/images/brands/1.png"
+               
+   }
+     ],
+    
+    "errors": []
+}'
+
+~~~
 
 
